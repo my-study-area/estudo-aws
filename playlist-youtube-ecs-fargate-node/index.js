@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require('axios');
 
-const db = require('./db');
 
 const app = express();
 const port = 3000;
@@ -15,8 +14,6 @@ const indexPage = `
     <ul>
         <li>Random dogs? <a href="/dogs">Click here</a></li>
         <li>Random cats? <a href="/cats">Click here</a></li>
-        <li>Create tables on AWS RDS <a href="/create-tables">Click here</a></li>
-        <li>Check my todo list <a href="/todos">Click here</a></li>
     </ul>
 `;
 
@@ -63,55 +60,55 @@ app.get('/cats', async (req, res) => {
   }
 });
 
-app.get('/create-tables', async (req, res) => {
-  const createTableSql = `
-  CREATE EXTENSION IF NOT EXISTS "pgcrypto";
-  
-  CREATE TABLE IF NOT EXISTS todos (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    todo VARCHAR (255) NOT NULL,
-    done BOOLEAN DEFAULT false,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-  );`
+// app.get('/create-tables', async (req, res) => {
+//   const createTableSql = `
+//   CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
-  try {
-    await db.query(createTableSql);
-    res.send('Todo table has been created');
-  } catch (error) {
-    console.error(JSON.stringify(error));
-    res.status(500);
-    res.send(error.message);
-  }
-});
+//   CREATE TABLE IF NOT EXISTS todos (
+//     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+//     todo VARCHAR (255) NOT NULL,
+//     done BOOLEAN DEFAULT false,
+//     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+//   );`
 
-app.get('/todos', async(req, res) => {
-  try {
-    const result = await db.query('SELECT * FROM todos');
+//   try {
+//     await db.query(createTableSql);
+//     res.send('Todo table has been created');
+//   } catch (error) {
+//     console.error(JSON.stringify(error));
+//     res.status(500);
+//     res.send(error.message);
+//   }
+// });
 
-    console.log({ result });
+// app.get('/todos', async(req, res) => {
+//   try {
+//     const result = await db.query('SELECT * FROM todos');
 
-    res.send(result.rows);
-  } catch (error) {
-    console.error(JSON.stringify(error));
-    res.status(500);
-    res.send(error.message);
-  }
-});
+//     console.log({ result });
 
-app.post('/todos', async(req, res) => {
-  try {
-    const params = req.body;
+//     res.send(result.rows);
+//   } catch (error) {
+//     console.error(JSON.stringify(error));
+//     res.status(500);
+//     res.send(error.message);
+//   }
+// });
 
-    console.log({ params });
+// app.post('/todos', async(req, res) => {
+//   try {
+//     const params = req.body;
 
-    const result = await db.query('INSERT INTO todos(todo) VALUES($1) RETURNING *', [params.todo]);
-    res.send(result.rows[0]);
-  } catch (error) {
-    console.error(JSON.stringify(error));
-    res.status(500);
-    res.send(error.message);
-  }
-});
+//     console.log({ params });
+
+//     const result = await db.query('INSERT INTO todos(todo) VALUES($1) RETURNING *', [params.todo]);
+//     res.send(result.rows[0]);
+//   } catch (error) {
+//     console.error(JSON.stringify(error));
+//     res.status(500);
+//     res.send(error.message);
+//   }
+// });
 
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
