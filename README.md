@@ -42,7 +42,7 @@ docker tag fargate-nodejs-app:latest <ID_CONTA_AWS>.dkr.ecr.us-east-1.amazonaws.
 # envia imagem para o ECR
 docker push <ID_CONTA_AWS>.dkr.ecr.us-east-1.amazonaws.com/fargate-nodejs-app:latest
 ```
-### Configurando VPC, Internet Gateway, Subnets e Route Tables
+### Configurando VPC, Internet Gateway, Subnets, Route Tables e NAT GaTeway
 VPC:
 
 - Nome: fna-vpc
@@ -68,6 +68,16 @@ Internet gateway:
 - Nome: fna-igw
 - Clicar em Action > anexar VPC > fna-vpc
 
+NAT gateway:
+
+- Nome: fna-nat-gw-a
+- Subnets: fna-public-a
+- clicar em alocar Elastic IP
+
+- Nome: fna-nat-gw-b
+- Subnets: fna-public-b
+- clicar em alocar Elastic IP
+
 Configurar tabelas de roteamento:
 
 Por padrão as subnets são definidas implicitamente nas tabelas de roteamento:
@@ -76,9 +86,20 @@ Por padrão as subnets são definidas implicitamente nas tabelas de roteamento:
   - clicar em edit subnets associations
   - selecione as subnets publicas e salve
   - na aba routes adicione uma nova rota com destination 0.0.0.0/0 e target apontando para o Internet gateway (fna-igw) e clique em save
-- Nome: fna-private-rt
+
+- Nome: fna-private-a-rt
   - clicar em edit subnets associations
-  - selecione as subnets privadas e salve
+  - selecione a fna-private-a e salve
+  - adiciona rota:
+    - Destination: 0.0.0.0/0
+    - Target: fna-nat-gw-a
+
+- criar fna-private-b-rt
+  - clicar em edit subnets associations
+  - selecione a fna-private-b e salve
+  - adiciona rota:
+    - Destination: 0.0.0.0/0
+    - Target: fna-nat-gw-b
 
 ### Configurando o Load Balancer
 Vamos criar uma application load balancer
@@ -147,39 +168,13 @@ Service:
     - target group: fna-alb-tg
 
 
-NAT GaTeway:
-
-- Nome: fna-nat-gw-a
-- Subnets: fna-public-a
-- clicar em alocar Elastic IP
-
-- Nome: fna-nat-gw-b
-- Subnets: fna-public-b
-- clicar em alocar Elastic IP
-
-
-Atualização das Route Tables:
-
-- fna-private-a-rt
-  - adiciona rota:
-    - Destination: 0.0.0.0/0
-    - Target: fna-nat-gw-a
-  - ir em rota e remover a associação com a subnet fna-public-b
-
-- criar fna-private-b-rt
-  - adiciona rota:
-    - Destination: 0.0.0.0/0
-    - Target: fna-nat-gw-b
-  - ir em rota e adicionar a associação com a subnet fna-public-b
-
-
 Atualizar SG do service (fna-random-dog)
 
-Acesse o service e vá em atualiza, acesse a aba rede e clique no link do SG:
+Acesse o service e vá em atualizar, acesse a aba rede e clique no link do SG:
 
 - atualize a entrada:
-  - entrada: HTTP TCP 80 origem: fna-alb-sg
-
+  - entrada: Todos os TCP 0 - 65535 
+  - origem: fna-alb-sg
 
 
 ## Links
