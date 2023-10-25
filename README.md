@@ -23,6 +23,8 @@ Para acessar a aplicação localmente acesse: [http://localhost:3000](http://loc
 
 
 ### Criar ECR
+Elastic container register (ECR) é utilizado para armazenar as imagens docker na AWS. Na atividade é criada uma imagem para uma aplicação em nodejs para ser utilizado no ECS.
+
 No console da AWS em ECR, defina os seguinte valores:
 - Configurações de visibilidade: privado
 - Nome do repositório: fargate-nodejs-app
@@ -43,6 +45,9 @@ docker tag fargate-nodejs-app:latest <ID_CONTA_AWS>.dkr.ecr.us-east-1.amazonaws.
 docker push <ID_CONTA_AWS>.dkr.ecr.us-east-1.amazonaws.com/fargate-nodejs-app:latest
 ```
 ### Configurando VPC, Internet Gateway, Subnets, Route Tables e NAT GaTeway
+Virtual Private Cloud (VPC) é uma rede privada virtual na cloud.
+
+
 VPC:
 
 - Nome: fna-vpc
@@ -65,10 +70,15 @@ Subnets:
 
 Internet gateway:
 
+É uma recurso da AWS responsável por permitir a comunicação entre os recursos de uma VPC com a internet e vice-versa. Ele é o responsável por possibilitar acesso a internet em nossas subnets públicas.
+
 - Nome: fna-igw
 - Clicar em Action > anexar VPC > fna-vpc
 
 NAT gateway:
+
+Network Address Translation Gateway (NAT) é um serviço que permite que os recursos de uma VPC acessem a internet. O NAT Gateway permite recursos de sunets privadas tenham acesso a internet para realizar download de dependências com NPM, por exemplo. 
+
 
 - Nome: fna-nat-gw-a
 - Subnets: fna-public-a
@@ -79,6 +89,8 @@ NAT gateway:
 - clicar em alocar Elastic IP
 
 Configurar tabelas de roteamento:
+
+As tabelas de roteamento são responáveis por rotear o tráfego de rede, definindo para onde deve ser direcionado o trafego de entrada e saída. No nosso exemplo será responsável por rotear o tráfego da subnet publica para o Internet Gateway e por rotear as subnets privadas para o NAT Gateway e permitir acesso a internet nas subnets privadas.
 
 Por padrão as subnets são definidas implicitamente nas tabelas de roteamento:
 
@@ -102,7 +114,10 @@ Por padrão as subnets são definidas implicitamente nas tabelas de roteamento:
     - Target: fna-nat-gw-b
 
 ### Configurando o Load Balancer
-Vamos criar uma application load balancer
+
+Um Application Load Balancer (ALB) é um serviço de balanceamento de carga que permite distribuir a carga entre em várias instânicias de uma aplicação. No nosso exemplo ele será a porta de entrada para acesso as instânicas de nossa aplicação no ECS.
+
+Vamos criar uma application load balancer:
 
 - Nome: fna-alb
 - VPC: fna-vpc
