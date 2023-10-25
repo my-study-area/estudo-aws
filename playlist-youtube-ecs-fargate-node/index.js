@@ -13,7 +13,6 @@ const indexPage = `
     <p>What would you like to see?</p>
     <ul>
         <li>Random dogs? <a href="/dogs">Click here</a></li>
-        <li>Random cats? <a href="/cats">Click here</a></li>
     </ul>
 `;
 
