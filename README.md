@@ -5,7 +5,7 @@ Estudo AWS
 ### Build da imagem localmente
 ```bash
 # entra no diretório
-cd playlist-youtube-ecs-fargate-node
+cd playlist-youtube-ecs-fargate-node/app
 
 # cria build da imagem
 docker build -t fargate-nodejs-app .
