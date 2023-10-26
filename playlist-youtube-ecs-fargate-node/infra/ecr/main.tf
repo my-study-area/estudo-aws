@@ -1,5 +1,3 @@
-
-
 # cria repositório no ecr
 module "ecr" {
   source  = "terraform-aws-modules/ecr/aws"
