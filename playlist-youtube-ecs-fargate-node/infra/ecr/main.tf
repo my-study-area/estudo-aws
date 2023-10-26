@@ -40,6 +40,7 @@ resource "aws_ecr_lifecycle_policy" "default_policy" {
       ]
   }
   EOF
+  depends_on = [ module.ecr ]
 }
 
 resource "null_resource" "docker_packaging" {
