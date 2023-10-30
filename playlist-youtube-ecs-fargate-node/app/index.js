@@ -20,8 +20,10 @@ app.get('/', (req, res) => res.send(indexPage));
 app.get('/healthcheck', (req, res) => {
   try {
     res.sendStatus(204);
+    console.log('healthcheck ok');
   } catch (error) {
     res.sendStatus(500);
+    console.log('healthcheck error');
   }
 });
 
@@ -41,73 +43,6 @@ app.get('/dogs', async (req, res) => {
     res.send(error.message);
   }
 });
-
-app.get('/cats', async (req, res) => {
-  try {
-    const response = await axios.get('https://aws.random.cat/meow');
-
-    console.log(JSON.stringify(response.data));
-
-    const { file: catImage } = response.data;
-    res.send(
-      `<img src="${catImage}" alt="random cat" style="max-width: 500px" />`
-    );
-  } catch (error) {
-    console.error(JSON.stringify(error));
-    res.status(500);
-    res.send(error.message);
-  }
-});
-
-// app.get('/create-tables', async (req, res) => {
-//   const createTableSql = `
-//   CREATE EXTENSION IF NOT EXISTS "pgcrypto";
-
-//   CREATE TABLE IF NOT EXISTS todos (
-//     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-//     todo VARCHAR (255) NOT NULL,
-//     done BOOLEAN DEFAULT false,
-//     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-//   );`
-
-//   try {
-//     await db.query(createTableSql);
-//     res.send('Todo table has been created');
-//   } catch (error) {
-//     console.error(JSON.stringify(error));
-//     res.status(500);
-//     res.send(error.message);
-//   }
-// });
-
-// app.get('/todos', async(req, res) => {
-//   try {
-//     const result = await db.query('SELECT * FROM todos');
-
-//     console.log({ result });
-
-//     res.send(result.rows);
-//   } catch (error) {
-//     console.error(JSON.stringify(error));
-//     res.status(500);
-//     res.send(error.message);
-//   }
-// });
-
-// app.post('/todos', async(req, res) => {
-//   try {
-//     const params = req.body;
-
-//     console.log({ params });
-
-//     const result = await db.query('INSERT INTO todos(todo) VALUES($1) RETURNING *', [params.todo]);
-//     res.send(result.rows[0]);
-//   } catch (error) {
-//     console.error(JSON.stringify(error));
-//     res.status(500);
-//     res.send(error.message);
-//   }
-// });
 
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
