@@ -63,13 +63,19 @@ resource "aws_eip" "fna-ei-b" {
 }
 
 resource "aws_nat_gateway" "fna-nat-gw-a" {
-  subnet_id     = aws_subnet.fna-private-a.id
+  subnet_id     = aws_subnet.fna-public-a.id
   allocation_id = aws_eip.fna-ei-a.id
+  tags = {
+    Name = "fna-nat-gw-a"
+  }
 }
 
 resource "aws_nat_gateway" "fna-nat-gw-b" {
-  subnet_id     = aws_subnet.fna-private-b.id
+  subnet_id     = aws_subnet.fna-public-b.id
   allocation_id = aws_eip.fna-ei-b.id
+    tags = {
+    Name = "fna-nat-gw-b"
+  }
 }
 
 # Route Tables publica
