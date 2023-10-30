@@ -192,6 +192,25 @@ Acesse o service e vá em atualizar, acesse a aba rede e clique no link do SG:
   - origem: fna-alb-sg
 
 
+Exemplo de policy para habilitar logs no alb:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::127311923021:root"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::s3-teste-los-alb/*"
+        }
+    ]
+}
+
+```
+
 ## Links
 - AWS ECS Fargate: Criando e deployando uma aplicação Node.js:
   - [AWS ECS Fargate: Criando e deployando uma aplicação Node.js](https://www.youtube.com/playlist?list=PLWQmZVQayUUI5RinDqpoIXiRYWy5YZKjs)
@@ -200,3 +219,5 @@ Acesse o service e vá em atualizar, acesse a aba rede e clique no link do SG:
   - [Fargate Network Mode](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html#fargate-tasks-networkmode)
   - [Analogia de uma VPC completa](https://start.jcolemorrison.com/aws-vpc-core-concepts-analogy-guide/)
   - [Post oficial da AWS sobre a rede de uma task no Fargate](https://aws.amazon.com/blogs/compute/task-networking-in-aws-fargate/)
+- [Set Application Load Balancer (ALB) Logs | Intermediate | Quick tips | Tutorial | DevOps](https://www.youtube.com/watch?v=crLyNT6mTwM&ab_channel=LearnCloudbyDoing)
+  - [Enable access logs for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#attach-bucket-policy)
