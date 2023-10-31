@@ -25,17 +25,40 @@ module "ecs" {
   }
 }
 
+resource "aws_cloudwatch_log_group" "this" {
+  name              = "/aws/ecs/${local.name}"
+  retention_in_days = 7
+
+  tags = {
+    Name = "${local.name}"
+  }
+}
+
 ## task definition
 resource "aws_ecs_task_definition" "fna-td" {
-    container_definitions = jsonencode([{
-      name  = "fna-td"
-      image = "${data.aws_caller_identity.current.account_id}.dkr.ecr.us-east-1.amazonaws.com/fargate-nodejs-app:latest" 
-      portMappings = [{
-        containerPort = 3000
-        hostPort      = 3000
-      }]
-    }])
-
+  container_definitions = <<DEFINITION
+    [
+      {
+        "name": "${local.name}-td",
+        "image": "${data.aws_caller_identity.current.account_id}.dkr.ecr.us-east-1.amazonaws.com/fargate-nodejs-app:latest",
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 3000,
+            "hostPort": 3000
+          }
+        ],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "${aws_cloudwatch_log_group.this.name}",
+            "awslogs-region": "us-east-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        }
+      }
+    ]
+    DEFINITION
   cpu = 256
   execution_role_arn = resource.aws_iam_role.this.arn
   family = "family-of-fna-tasks"
