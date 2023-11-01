@@ -1,7 +1,7 @@
 # estudo-aws
 Estudo AWS
 
-## Anotações da playlis AWS ECS Fargate: Criando e deployando uma aplicação Node.js
+## Anotações da playlist AWS ECS Fargate: Criando e deployando uma aplicação Node.js
 ### Build da imagem localmente
 ```bash
 # entra no diretório
@@ -208,7 +208,33 @@ Exemplo de policy para habilitar logs no alb:
         }
     ]
 }
+```
 
+### Terraform da aplicação ECS Fargate da playlist
+Terraform para criação dos recursos do ECS Fargate.
+
+Passos para criar a imagem docker no ECR:
+```bash
+# entra no diretório para criar a imagem docker no ECR
+cd playlist-youtube-ecs-fargate-node/infra/ecr
+
+# instala as dependências
+terraform init
+
+# cria a infraestrutura
+terraform apply --auto-approve
+```
+
+Passos para criar a infra do ECS:
+```bash
+# entra no diretório para criar a infra do ECS
+cd playlist-youtube-ecs-fargate-node/infra/ecs
+
+# instala as dependências
+terraform init
+
+# cria a infraestrutura
+terraform apply --auto-approve
 ```
 
 ## Links
@@ -221,3 +247,4 @@ Exemplo de policy para habilitar logs no alb:
   - [Post oficial da AWS sobre a rede de uma task no Fargate](https://aws.amazon.com/blogs/compute/task-networking-in-aws-fargate/)
 - [Set Application Load Balancer (ALB) Logs | Intermediate | Quick tips | Tutorial | DevOps](https://www.youtube.com/watch?v=crLyNT6mTwM&ab_channel=LearnCloudbyDoing)
   - [Enable access logs for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#attach-bucket-policy)
+- [Using the awslogs log driver](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_awslogs.html)
