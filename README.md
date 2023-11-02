@@ -248,3 +248,4 @@ terraform apply --auto-approve
 - [Set Application Load Balancer (ALB) Logs | Intermediate | Quick tips | Tutorial | DevOps](https://www.youtube.com/watch?v=crLyNT6mTwM&ab_channel=LearnCloudbyDoing)
   - [Enable access logs for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#attach-bucket-policy)
 - [Using the awslogs log driver](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_awslogs.html)
+- [Deploying AWS Lambda Function with Terraform + Custom Dependencies](https://alek-cora-glez.medium.com/deploying-aws-lambda-function-with-terraform-custom-dependencies-7874407cd4fc)
