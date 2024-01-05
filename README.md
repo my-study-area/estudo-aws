@@ -249,3 +249,4 @@ terraform apply --auto-approve
   - [Enable access logs for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#attach-bucket-policy)
 - [Using the awslogs log driver](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_awslogs.html)
 - [Deploying AWS Lambda Function with Terraform + Custom Dependencies](https://alek-cora-glez.medium.com/deploying-aws-lambda-function-with-terraform-custom-dependencies-7874407cd4fc)
+- [Instalar java 11 EC2 Amazon](https://stackoverflow.com/a/68619647/6415045)
