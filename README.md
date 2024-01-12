@@ -1,8 +1,11 @@
 # estudo-aws
 Estudo AWS
 
-# Sumário
+## Sumário
 - [Anotações da playlist AWS ECS Fargate: Criando e deployando uma aplicação Node.js](./playlist-youtube-ecs-fargate-node/)
+
+## [NEW] Ultimate AWS Certified Cloud Practitioner CLF-C02
+
 
 ## Links
 - AWS ECS Fargate: Criando e deployando uma aplicação Node.js:
