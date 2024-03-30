@@ -3503,3 +3503,50 @@ AWS Managed Services (AMS)
 
 ### Quiz 20: AWS Architecting & Ecosystem Quiz
 
+## Section 22: Prepaparing for the exam + practice exame - AWS Managed Certified Cloud Practioner
+### 271. Words on Other Services
+
+### 272. State of Learning Checkpoint - AWS Certified Cloud Practitioner
+- [https://explore.skillbuilder.aws/learn/course/external/view/elearning/14050/exam-prep-official-question-set-aws-certified-cloud-practitioner-clf-c02-english](https://explore.skillbuilder.aws/learn/course/external/view/elearning/14050/exam-prep-official-question-set-aws-certified-cloud-practitioner-clf-c02-english)
+
+### 273. Exam Sample Question Walkthrough
+- Amazon inspector: inpect ec2 instance mainly 
+- Amazon Macie: to protect data in Amazon S3 
+- Amazon GuardDuty: protect your account automatically
+- Amazon Secret Manager: source secrets
+
+
+- Reserved instance: instance for 1 or three years
+- ON-demand Instances: is the default mode to launch instances
+- Dedicated instances: dedicated hardware
+- Spot instances: unused Amazon EC2 capacity
+
+- AWS Elastic Beanstalk: to launch/deploy a Java or NOde JS applications
+- Amazon DynamoDB Accelerator (DAX): accelerate DynamoDB
+- Amazon Route 53: networking and DNS
+- Amazon CloudFront: lower latency and high transfer speeds of the data by caching data
+
+- AWS CodeArtifact: store software packages / dependencies on AWS
+- AWS CodeBuild: build and deploy applications
+- AWS CodePipeline: Orchestrate the different steps to have the code automatically pushed to production
+- AWs CodeCommit: source code management
+
+### 274. Exam Tips - AWS Certified Cloud Practitioner
+
+### 275. Exam Walkthrough and Signup
+
+### 276. Save 50% on your AWS Exam Cost
+
+### 277. Get an Extra 30 Minutes on your AWS Exam - Non Native English Speakers only
+
+### Practice Test 1: Practice Exam - AWS Certified Cloud Practitioner
+
+## Section 23: Configurations - AWS Certified Cloud Pratictioner
+### 278. AWS Certification Paths
+
+### 279. Congratulations - AWS Certified Cloud Practitioner
+
+### 280. THANK YOU!
+
+### 281. Bonus Lecture
+
