@@ -3550,3 +3550,118 @@ AWS Managed Services (AMS)
 
 ### 281. Bonus Lecture
 
+# Exam Prep Official Question Set: AWS Certified Cloud Practitioner (CLF-C02 - English)
+Link: [https://explore.skillbuilder.aws/learn/course/14050/exam-prep-official-question-set-aws-certified-cloud-practitioner-clf-c02-english](https://explore.skillbuilder.aws/learn/course/14050/exam-prep-official-question-set-aws-certified-cloud-practitioner-clf-c02-english)
+
+
+## Amazon
+
+Amazon Cloudfront: is a service that speeds up the loading of static and dynamic web contents. It uses edge locations.
+
+Amazon CloudWatch: is a service that allows you to monitor your AWS resources. It is possible to use with AWS CloudTrail to monitor and receive alerts about console sign-in events that involve the AWS account root user. Amazon EBS emits notifications based on Amazon CloudWatch Events for a variety of volume, snapshot, and encryption status changes. With CloudWatch Events, you can establish rules that trigger programmatic actions in response to a change in volume, snapshot, or encryption key state (though not for underutilized volume usage).
+
+Amazon Connect: allows customers to connect with agents and customers. Is a managed and customized service call center.
+
+Amazon Direct Connect: is a cloud service that establishes a dedicated network connection between your on-premises infrastructure (data center, office, etc.) and the AWS cloud. It bypasses the public internet, offering a more consistent, reliable, and secure connection for transferring data to and from AWS services. Direct Connect isn't necessarily the most cost-effective option for occasional or low-volume data transfers. However, for organizations with the aforementioned needs, it can be a powerful tool for optimizing their AWS cloud experience.
+
+
+Amazon EC2 Instance Connect: Amazon EC2 Instance Connect provides a simple and secure way to connect to your Linux instances using Secure Shell (SSH). With EC2 Instance Connect, you use AWS Identity and Access Management (IAM) policies and principals to control SSH access to your instances, removing the need to share and manage SSH keys.
+
+Amazon Inspector: is an automated security assessments service. It detects vulnerabilities in your AWS infrastructure. Only for EC2 instances, Container Images & Lambda functions. Automate security assessments, Analyze against unintended network accessibility Inspect and  running operating systems (OS) against known vulnerabilities are all features of Amazon Inspector.
+
+Amazon Lightsail: is a service that makes it easy to set up, manage, and use virtual private servers. It's a good option for beginners, small businesses, and developers who need a simple and affordable platform for deploying and managing their applications.
+
+Amazon Polly: is a text-to-speech service
+
+Amazon RedShift:  is a fully-managed petabyte-scale cloud-based data warehouse product designed for large scale data set storage and analysis. Amazon Redshift requires a well-defined schema.
+
+Amazon S3: is a object storage service and a durable storage service. It is not a global file system neither a local file store
+
+Amazon S3 Glacier - Amazon S3 Glacier (S3 Glacier), is a storage service optimized for infrequently used data, or "cold data. Data at rest stored in S3 Glacier is automatically server-side encrypted using 256-bit Advanced Encryption Standard (AES-256) with keys maintained by AWS.
+
+Amazon Transcribe: is a service that transcribes audio into text. Automatically convert speech to text.
+
+Amazon Translate: translates text from one language to another
+
+
+
+
+
+
+## AWS
+AWS Acceptable Use Policy (AUP): outlines the rules and regulations for using Amazon Web Services (AWS) and its associated websites. It essentially sets a binding agreement between you and AWS regarding how you can leverage their services. 
+
+AWS Application Discovery Service: collects information about on-premises data centers and servers.
+
+AWS Application Migration Service: this is a solution to migrate aplicarion and data to AWS (lift-and-shift).
+
+AWS Budgets: gives the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount. 
+
+AWS CloudFormation: gives developers and systems administrators an easy way to create and manage a collection of related AWS resources, provisioning and updating them in an orderly and predictable fashion.
+
+AWS CodeDeploy: is a service that automates code deployments to any instance, including Amazon EC2 instances and instances running on-premises. 
+
+AWS Config: is a service that helps with auditing and recording compliance of your AWS resources. It continuously monitors and records your AWS resources, including their configuration changes over time.
+
+AWS Cost and Usage Reports: is a service that allows you to view your AWS costs and usage over time.
+
+AWS Cost Explorer: has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.
+
+AWS Database migration service: migrates data from an on-premises database to a database in AWS
+
+AWS Direct Connect: links on-premises networks to AWS (VPC).
+
+AWS Edge Locations: an AWS Edge location is a site that CloudFront uses to cache copies of the content for faster delivery to users at any location.
+
+AWS Elastic Beanstalk: is a web application deployment service. It essentially automates the process of provisioning resources, deploying your code, and managing infrastructure for your applications. It is a developer centric view of deploying an application on AWS.
+
+AWS Fargate: is a service that allows you to run containers on AWS. It eliminates the need to manage servers for your containerized applications, allowing you to focus on building and deploying your code
+
+AWS Forum: is a service that allows you to communicate with other AWS users. It is built by community members.
+
+AWS Local Zones: allow you to use select AWS services, like compute and storage services, closer to more end-users, providing them very low latency access to the applications running locally.
+
+AWS Migration Hub: is a service that helps in a migration aplication and data to AWS.
+
+AWS Personal Health Dashboard: provides alerts and remediation guidance when AWS is experiencing events that might affect you.
+
+AWS Quick Starts reference: a variety of resources to help you get started using their automated reference deployments. Built by AWS solutions architects and partners to help you deploy popular technologies on AWS, based on AWS best practices for security and high availability.
+
+AWS site-to-site VPN: VPN over public internet between on-premises Data center network and AWS
+
+AWS Storage Gateway: AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. All data transferred between the gateway and AWS storage is encrypted using SSL (for all three types of gateways - File, Volume and Tape Gateways).
+
+AWS Systems Manager: is a service that allows you to manage your AWS resources. It offers a comprehensive set of tools to automate tasks, enforce configurations, and gain operational insights across your resources.
+
+AWS Systems Manager Session Manager:  is a service offered by AWS that simplifies securely connecting to and managing your Linux and Windows instances running on Amazon EC2 (Elastic Compute Cloud). It eliminates the need to manually configure SSH access or manage public keys for each instance.
+
+AWS Trusted Advisor: is an online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment. AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories: Cost Optimization, Performance, Security, Fault Tolerance, Service Limits. AWS Trusted Advisor can check Amazon Elastic Block Store (Amazon EBS) volume configurations and warns when volumes appear to be underused.
+
+AWS Whitepapers: is a collection of whitepapers on AWS authorized by AWS and AWS community.
+
+Concierge Support Team: The Concierge Support Team are AWS billing and account experts that specialize in working with enterprise accounts. They will quickly and efficiently assist you with your billing and account inquiries. The Concierge Support Team is only available for the Enterprise Support plan. 
+
+EC2 Instance Store: it acts like temporary storage directly attached to the EC2 instance, similar to the hard drive on your personal computer. AWS instance store refers to temporary block-level storage that is directly attached to an EC2 (Elastic Compute Cloud) instance in the AWS cloud. 
+
+Elastic Load Balancing: is a service offered by Amazon Web Services (AWS) that distributes incoming traffic across multiple target instances or containers. It acts as a traffic director, ensuring that your application remains highly available and scalable. It does not accept targets across Regions.
+
+U2F security key: Universal 2nd Factor (U2F) Security Key is a device that you can plug into a USB port on your computer. U2F is an open authentication standard hosted by the FIDO Alliance. When you enable a U2F security key, you sign in by entering your credentials and then tapping the device instead of manually entering a code.
+
+S3 Glacier Deep Archive: is Amazon S3’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice in a year. 
+
+S3 Intelligent-Tiering: The S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead. It works by storing objects in two access tiers: one tier that is optimized for frequent access and another lower-cost tier that is optimized for infrequent access. S3 Intelligent-Tiering has a retrieval time (first byte latency) of milliseconds.
+
+S3 One-Zone Infrequent Access (One-Zone IA): is for data that is accessed less frequently but requires rapid access when needed. Unlike other S3 Storage Classes which store data in a minimum of three Availability Zones (AZs), S3 One Zone-IA stores data in a single AZ and costs 20% less than S3 Standard-IA. S3 One Zone-IA offers the same high durability, high throughput, and low latency of S3 Standard, with a low per GB storage price and per GB retrieval fee.
+
+## Six advantages of cloud computing
+**Trade fixed expense for variable expense**: Instead of having to invest heavily in data centers and servers before you know how you’re going to use them, you can pay only when you consume computing resources, and pay only for how much you consume.
+
+**Benefit from massive economies of scale**: By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale, which translates into lower pay as-you-go prices.
+
+**Stop guessing capacity**: Eliminate guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity. With cloud computing, these problems go away. You can access as much or as little capacity as you need, and scale up and down as required with only a few minutes’ notice.
+
+**Increase speed and agility**: In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes. This results in a dramatic increase in agility for the organization, since the cost and time it takes to experiment and develop is significantly lower.
+
+**Stop spending money running and maintaining data centers**: Focus on projects that differentiate your business, not the infrastructure. Cloud computing lets you focus on your own customers, rather than on the heavy lifting of racking, stacking, and powering servers.
+
+**Go global in minutes**: Easily deploy your application in multiple regions around the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.
