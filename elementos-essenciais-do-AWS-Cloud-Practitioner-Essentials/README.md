@@ -110,3 +110,44 @@ Pontos principais:
   - AWS CloudFormation
 
 ### Questionário do módulo 3
+
+## Modulo 04: Redes
+### Introdução ao módulo 4
+
+### Conectividade com a AWS
+- VPC
+- sub-redes
+- gateway de internet (entrada pública)
+- gateway privado virtual (liga rede VPC com outra rede interna)
+- aws direct connection (liga rede privada do seu datacerter com a rede da AWS)
+
+### Sub-redes e listas de controle de acesso à rede
+- proteção de rede
+  - ACL de rede: só define quem entra ou sai, mas não define uqal recurso pode acessar
+    - por padrão permite todo mundo entrar e sair até vc aplicar regras
+  - grupo de segurança: define quem pode acessar qual recurso (instânica na VPC). Pode definir que protocolo pode entrar (HTTP, por exemplo), mas deixa tudo que entrou sair.
+  - grupo de segurança é statefull e ACL é stateless
+  - 
+
+Questionário
+
+### Redes globais
+- route 53 (DNS)
+- amazon cloud front (CDN): usa locais de borda (edge location)
+- Políticas de roteamento do amazon route 53:
+  - baseado em latência
+  - dns de geolocalização
+  - rotemanento de geoproximidade
+  - pesos
+
+Questionário
+
+### Resumo do módulo 4
+- VPC
+- gateway de internet, acls de rede e grupos de segurança
+- vpn e direct connect
+- locais de borda
+- route 53 para DNS
+- amazon cloud front
+
+### Questionário do módulo 4
