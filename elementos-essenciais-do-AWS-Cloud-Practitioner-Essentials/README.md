@@ -151,3 +151,59 @@ Questionário
 - amazon cloud front
 
 ### Questionário do módulo 4
+
+## Modulo 05: Armazenamento e banco de dados
+### Introdução ao módulo 5
+
+### Armazenamentos de instância e Amazon Elastic Block Store (Amazon EBS)
+- instance store (temporário): volume de Armazenamento de instância
+- EBS: Amazon Elastic Block Store: vollumes do EBS
+  - snapshots: backup de volumes de instância
+
+Um snapshot do EBS(opens in a new tab) é um backup incremental. Isso significa que o primeiro backup de um volume copia todos os dados. Nos backups subsequentes, somente os blocos de dados que foram alterados desde o snapshot mais recente são salvos. 
+
+Questionário
+
+### Amazon Simple Storage Service (Amazon S3)
+- S3 (Amazon Simple Storage Service)
+  - armazena dados como objetos
+  - Usado para hospedagem de sites
+- Amazon S3 Standard (S3 Standard)
+- S3 Standart IA (S3 Standard-Infrequent Access)
+- S3 Glacier Flexible Retrieval
+- politicas de ciclo de vida de um objeto no S3
+- S3 One Zone-Infrequent Access
+- S3 Glacier Instant Retrieval
+- S3 Glacier Deep Archive
+- S3 Intelligent Tiering
+
+Questionário
+
+A storage class S3 Standard-IA é ideal para dados acessados com pouca frequência, mas que precisam ter alta disponibilidade quando necessário. O S3 Standard e o S3 Standard – IA armazenam dados em um mínimo de três Zonas de Disponibilidade. O S3 Standard-IA tem o mesmo nível de disponibilidade que o S3 Standard, mas a um preço de armazenamento mais baixo.
+
+As outras respostas estão incorretas porque:
+
+na storage class S3 Intelligent-Tiering, o Amazon S3 monitora os padrões de acesso dos objetos. Se você não acessou um objeto por 30 dias consecutivos, o Amazon S3 o move automaticamente para o nível de acesso pouco frequente S3 Standard-IA. Se você acessar um objeto no nível de acesso pouco frequente, o S3 vai movê-lo automaticamente para o nível de acesso frequente S3 Standard.
+O S3 Glacier Flexible Retrieval e o S3 Glacier Deep Archive são storage classes de baixo custo ideais para arquivamento de dados. Eles não seriam a melhor escolha para esse cenário, pois alta disponibilidade é necessária. É possível recuperar objetos armazenados na storage class S3 Glacier Flexible Retrieval de alguns minutos a algumas horas. Em comparação, é possível recuperar objetos armazenados na storage class S3 Glacier Deep Archive em até 12 horas.
+
+#### **Comparação entre EBS e S3:**
+Round 1 (S3): Para um site de análise de fotos que armazena e exibe milhões de imagens, o S3 é ideal. Ele permite armazenar objetos (imagens) com URLs controladas e acesso configurável, é altamente durável (99,999999999%) e econômico comparado ao EBS. O S3 é "serverless" e regionalmente distribuído, dispensando EC2 para hospedagem, sendo ideal para armazenamento de arquivos inteiros que não exigem atualização constante.
+
+Round 2 (EBS): Para edição de vídeos pesados (80GB, por exemplo), o EBS, com armazenamento em blocos, é mais adequado. Ele permite editar partes específicas de um arquivo sem reescrevê-lo completamente, economizando tempo e recursos em tarefas de edição frequente, que seriam ineficazes no S3.
+
+Conclusão: O S3 é ideal para armazenar arquivos inteiros acessados ocasionalmente, enquanto o EBS é preferível para arquivos que exigem edições constantes e pontuais. A escolha entre S3 e EBS depende das necessidades específicas da carga de trabalho.
+
+### Amazon Elastic File System (Amazon EFS)
+- Amazon EFS: Amazon Elastic File System
+  - várias instancias podem acessa os dados do EFS em simultaneamente
+
+#### Comparação entre o Amazon EBS e o Amazon Elastic File System
+**EFS**    
+O Amazon Elastic File System é um serviço regional. Ele armazena dados em várias Zonas de Disponibilidade e entre elas.    
+O armazenamento duplicado permite que você acesse dados simultaneamente de todas as Zonas de Disponibilidade na Região em que um sistema de arquivos está localizado. Além disso, os servidores on-premises podem acessar o Amazon Elastic File System usando o AWS Direct Connect.
+
+**EBS**    
+Um volume do Amazon EBS armazena dados em uma única Zona de Disponibilidade.    
+Para anexar uma instância do Amazon EC2 a um volume do EBS, tanto a instância do Amazon EC2 quanto o volume do EBS precisam residir na mesma Zona de Disponibilidade.
+
+### Amazon Relational Database Service (Amazon RDS)
