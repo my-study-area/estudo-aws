@@ -267,3 +267,74 @@ Questionário
 - Outros serviços de banco de dados e aceleradoras
 
 ### Questionário do módulo 5
+
+## Modulo 06: Segurança
+### Introdução ao módulo 6
+
+### Modelo de responsabilidade compartilhada da AWS
+- AWS cuida da segurança da nuvem 
+- você  cuida da segurança na nuvem
+
+Questionário
+
+### Permissões de usuário e acesso
+- privilégio mínimo
+- usuário raiz pode fazer qualquer coisa
+- usuários que podem ser organizados em grupos
+- políticas: são documentos que descrevem permissões e que podem ser anexadas a usuários ou grupos
+- perfil ou "role"
+  - existem permissões associadas
+  - atribuídas por períodos temporários na sua conta AWS para usuários,  identidades externas, aplicações e até mesmo outros serviços da AWS
+  - sem nome de usuários ou senha
+  - uma identidade que recebe uma role ela recebe novas permissões e perde acesso as permissões anteriores.
+
+### AWS Organizations
+- um lugar central para gerenciar diversas contas
+- compartilhar recursos entre as suas contas AWS
+- gerenciamento centralizado
+- cobrança consolidada (todas contas numa única conta) com cobranças e descontos
+- organização hierarquicas
+- control de acesso em serviços e recursos que cada usuário pode acessar
+
+Com o AWS Organizations, você pode aplicar políticas de controle de serviço (SCPs) para a raiz da organização, uma conta de membro individual ou uma UO.
+
+Você pode aplicar políticas do IAM a usuários, grupos ou perfis do IAM. Você não pode aplicar uma política do IAM ao usuário-raiz da conta AWS.
+
+Questionário
+
+### Conformidade
+- RGPD: regulamento geral de proteção de dados (Europa)
+- HIPAA: Lei de portabilidade e responsabilidade do seguro de saúde (EUA)
+- AWS já contempla parte da conformidade da AWS
+- o cliente é responsável pelo seus dados na AWS
+- AWs Artifact para acessar documentos de conformidade para atender regulamentações
+- 
+
+Questionário
+
+### Ataques de negação de serviço
+- DOS (Denial of Service)
+- DDOS (Distributed Denial of Service)
+- inundação UDP. Solução: grupos de segurança
+- ataques de nível HTTP. Solução: AWS Shield
+- ataque slowloris: Solução Elastic Load Balancer
+- AWs Shield com AWS WAF
+
+### Serviços de segurança adicionais
+- Criptografia de dados
+  - repouso (Dynamodb e pode usar KMS)
+  - transito: entre serviços: Amazon Redshift com SQL usando SSL
+- Amazon inspector: avalia a segurança
+  - verifica desviso de boa prática de segurança
+  - exposição de instâncias do EC2
+  - vunerabilidade
+- Amazon GuardDuty: analisa fluxos contínuos de metadados gerados pela sua conta
+
+### Resumo do módulo 6
+- O modelo de responsabilidade compartilhada
+- Recursos do AWS Identity and Access Management
+- Métodos de gerenciamento de múltiplas contas no AWS Organizations
+- Recursos de conformidade da AWS
+- Serviços da AWS para segurança e criptografia das aplicações
+
+### Questionário do módulo 6
