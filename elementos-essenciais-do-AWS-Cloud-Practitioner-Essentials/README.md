@@ -207,3 +207,63 @@ Um volume do Amazon EBS armazena dados em uma única Zona de Disponibilidade.
 Para anexar uma instância do Amazon EC2 a um volume do EBS, tanto a instância do Amazon EC2 quanto o volume do EBS precisam residir na mesma Zona de Disponibilidade.
 
 ### Amazon Relational Database Service (Amazon RDS)
+- Aurora (Mysql e PostgreSQL): banco de dados relacional de nível empresarial
+- RDS (Mysql, PostgreSQL, MariaDB, Microsoft SQL Server, Oracle DB): Amazon Relational Database Service
+- Nigração lift-and-shift: migrar de um banco de dados para ser executado no EC2
+
+### Amazon DynamoDB
+- banco de dados sem servidor
+- no sql (banco de dados não relacional)
+- sem schema rígido
+- é possível adicionar e remover atributos das tabelas
+- totalmente gerenciável
+
+**Comparando DynamoDB com Amazon RDS**
+
+**RDS**
+- alta disponibilidade
+- cliente é proprietário dos dados
+- cliente define o schema da tabela
+- cliente controla a rede
+
+**DynamoDB**
+- usar par de chave valor
+- capacidade de produção massíva
+- não relacional
+- não tem schema rígido
+- acesso api granular
+
+Questionário
+
+### Amazon Redshift
+- Data warehouse
+- escala massiva de dados
+- consulta direta no datalake
+- capacidade de coletar dados de muitas fontes 
+
+### AWS Database Migration Service
+- migrar do banco de dados on premise, EC2 ou RDS 
+- banco de dados de origem e destino podem ser diferentes
+- Homogenos: estrutura  dos schemas e tipos de dados e código do banco de dados  são compatíveis entre a origem e o destino
+- Heterogênios:  bancos de dados de origem e de destino são diferentes. As estruturas do schema, tipos de dados e código de banco de dados são diferentes  entre origem e destino.
+- replicação contínua de dados
+
+### Serviços de banco de dados adicionais
+- Amazon DocumentDB: é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB
+- Amazon Neptune: baco de dados de grafos
+- Amazon Manage Blockchain: é um serviço para criar e gerenciar redes de blockchain com frameworks de código aberto.
+- Amazon Quantum Ledger Database: é um serviço de banco de dados ledger. Você pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
+- Amazon Elasticache com Redis e Memcached: é um serviço que adiciona camadas de cache sobre bancos de dados
+- DAX (Amazon DynamoDB Accelerator): é um cache em memória do DynamoDB
+
+### Resumo do módulo 5
+- Armazenamento de instância do Amazon EC2 e Amazon EBS
+- Amazon S3
+- Amazon Elastic File System
+- Bancos de dados relacionais e Amazon RDS
+- Bancos de dados não relacionais e DynamoDB
+- Amazon Redshift
+- AWS DMS
+- Outros serviços de banco de dados e aceleradoras
+
+### Questionário do módulo 5
