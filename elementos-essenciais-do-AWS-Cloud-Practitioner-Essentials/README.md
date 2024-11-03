@@ -338,3 +338,42 @@ Questionário
 - Serviços da AWS para segurança e criptografia das aplicações
 
 ### Questionário do módulo 6
+
+## Módulo 07: Monitoramento e análise
+### Introdução ao módulo 7
+
+### Amazon CloudWatch
+- monitorando recursos da AWS
+- criar alarmes usando SNS
+- dashboards de monitoramento
+- todas métricas num local central
+- visualizar aplicações e infra
+
+### AWS CloudTrail
+- realiza auditoria de chamadas de apis. Toda solicitação é registrada no CloudTrail
+- salva os logs num bucket S3
+
+Questionário
+
+### AWS Trusted Advisor
+- 5 pilares:
+  - otimização de recursos
+  - performance
+  - segurança
+  - tolerância a falhas
+  - cotas de serviços
+
+Como Posso Seguir em Frente Sem Limite?
+
+- C: Custo (Otimização de Custos)
+- P: Performance (Desempenho)
+- S: Segurança (Segurança)
+- F: Falhas (Tolerância a Falhas)
+- S: Serviço (Limites de Serviço)
+
+### Resumo do módulo 7
+- Amazon CloudWatch
+- AWS CloudTrail
+- AWS Trusted Advisor
+
+### Questionário do módulo 7
