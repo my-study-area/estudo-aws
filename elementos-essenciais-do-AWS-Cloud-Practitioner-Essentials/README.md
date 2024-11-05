@@ -377,3 +377,97 @@ Como Posso Seguir em Frente Sem Limite?
 - AWS Trusted Advisor
 
 ### Questionário do módulo 7
+
+## Módulo 08: Definição de preço e suporte
+### Introdução ao módulo 8
+
+### Nível gratuito da AWS
+- Free tier
+  - sempre gratuito
+  - 12 meses grátis
+  - versão de teste
+- Aws Lambda
+  - 1 milhão de requests por mês grátis
+  - 
+- Amazon S3
+  - gratuito por 12 meses até 5GB
+- lightsail
+  -1 mês para até 750 horas uso
+
+Questionário
+
+### Conceitos de definição de preço da AWS
+- page somente pelo que usar
+- pague menos ao fazer reserva
+- pague menos com descontos baseados em volume, quando usar mais
+- calculadora de preço da AWS
+
+### Painel de cobrança
+Painel de faturamento da AWS (Billing)
+
+- Compare o saldo atual do mês acumulado com o mês anterior e obtenha uma previsão do próximo mês com base no uso atual.
+- Visualize os gastos do mês acumulado por serviço.
+- Visualize o uso do nível gratuito por serviço.
+- Acesse o Cost Explorer e crie orçamentos.
+- Adquira e gerencie o Savings Plans.
+- Publique AWS relatório de uso e custo(opens in a new tab).
+
+### Cobrança consolidada
+- cobrança consolidada (todas contas numa única conta) com cobranças e descontos
+- visualizar de forma detalhada
+- desconto por volume
+- instâncias reservadas podem ser compartilhadas entre contas da organização
+
+### AWS Budgets
+- definir orçamentos personalidados
+- envia alerta quando chega numa porcentagem definida
+
+### AWS Cost Explorer
+- permite analisar visualmente os seus gastos
+- detalhamento dos gastos por serviço nos último 6 meses
+
+### Planos do AWS Support
+- AWs basic suport plan
+  - 
+- AWs developer support plan
+  - suporte basic
+  - acesso por e-mail ao suporte ao cliente
+  - AWs trusted Advisor limitado
+- AWs business support plan
+  - suporte basic e developer
+  - trusted adivisor total
+  - acesso direto a engenheiros de suporte por telefone
+  - gerenciamento de evento de Infraestrutura (black friday por exemplo)
+- AWs enterprise on-ramp support plan
+  - suporte basic, developer e business
+  - tempo de resposta de 30 minutos
+  - acesso a TAMs (Technical Account Manager): orientação pro ativa
+- AWs Enteprise support plan
+  - Suporte basic, developer e business
+  - tempo de resposta de 15 minutos
+  - acesso a TAMs (Technical Account Manager)
+
+O seis pilares do Well-Architect:
+- excelência operacional
+- segurança
+- confiabilidade
+- eficiência de Desempenho
+- otimização de recursos
+- sustentabilidade
+
+Questionário
+
+### AWS Marketplace
+- catálogo digital de produtos e solução
+- ferramentas de gerenciamento de custos
+
+### Resumo do módulo 8
+- Três ofertas do nível gratuito da AWS: 12 meses grátis, sempre gratuito e versão de teste
+- Benefícios da cobrança consolidada no AWS Organizations
+- Ferramentas para planejamento, estimativa e revisão de custos da AWS
+- Diferenças entre os cinco planos do AWS Support: Basic, Desenvolvedor, Empresarial, Empresarial Rápido e Empresarial de Grande Porte
+- Como descobrir um software no AWS Marketplace
+
+### Questionário do módulo 8
+
+
