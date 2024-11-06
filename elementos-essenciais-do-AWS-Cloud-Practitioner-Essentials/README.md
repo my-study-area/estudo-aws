@@ -470,4 +470,60 @@ Questionário
 
 ### Questionário do módulo 8
 
+## Módulo 09: Migração e inovação
+### Introdução ao módulo 9
 
+### AWS Cloud Adoption Framework (AWS CAF)
+- Negócios: analista comercial ou negócios
+- Pessoas: RH
+- Governança
+- Platforma: arquiteto de nuvem
+- Segurança
+- Operações
+
+Questionário
+
+### Estratégias de migração
+6 Rs:
+- redifinir a hospedagem: também conhecido como “lift-and-shift”) envolve a movimentação de aplicações sem alterações. 
+- redefinir a plataforma: (também conhecido como “lift, tinker and shift”) envolve fazer algumas otimizações na nuvem para obter um benefício tangível.
+- retirar: é o processo de remoção de aplicações que não são mais necessários.
+- reter
+- recomprar
+- refatorar:  (também conhecida como rearquitetura) envolve reimaginar como uma aplicação é arquitetada e desenvolvida usando recursos nativos da nuvem.
+
+Questionário
+
+### AWS Snow Family
+- AWS Snowcone
+  - 8TB
+- AWS Snowball edge
+  - 80TB
+  - Snowball Edge Storage Optimized 
+  - Snowball Edge Compute Optimized
+- AWS Snowmobile
+  - 100 petabytes
+
+Questionário
+
+### Inovação com a AWS
+- VMWarware
+- AWS Sagemaker: modelos de machine learning
+- Amazon Augmented AI Amazon Augmented AI ou Amazon A2I
+- Amazon Lex: chatbots de voz e texto 
+- Amazon text extract
+- AWS DeepRacer: aprendizado por reforço
+- AWs Ground Station: satélite
+
+- amazon Code Whizperer: IA para gerar código fonte em linguagem de programação
+  - avalia práticas de segurança
+  - sugestões de código baseado nas escritas de código
+  - acelera desenvolvimento de software
+
+### Resumo do módulo 9
+- O AWS Cloud Adoption Framework
+- As seis estratégias para migração
+- A AWS Snow Family
+- Inovação com serviços da AWS
+
+### Questionário do módulo 9
