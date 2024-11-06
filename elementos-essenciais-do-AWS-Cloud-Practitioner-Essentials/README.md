@@ -527,3 +527,57 @@ Questionário
 - Inovação com serviços da AWS
 
 ### Questionário do módulo 9
+
+## Módulo 10: Jornada para a nuvem
+### Introdução ao módulo 10
+- Resumir os seis pilares do Well-Architected Framework.  
+- Explicar os seis benefícios da computação em nuvem.
+
+Well-Architected Framework que são:  
+- excelência operacional
+- segurança
+- confiabilidade
+- eficiência de performance
+- otimização de custos 
+- sustentabilidade
+
+### O AWS Well-Architected Framework
+- excelência operacional: automatizar atualização utilizando pipelines de deploy
+- segurança: processos para garantir a integridade dos dados e trabalhar com criptografia
+- confiabilidade: caso uma instância EC2 se torne indisponível  e como lidar com isso de acordo com as suas necessidades de negócio e demandas de clientes.
+- eficiência de performance: utilização inteligente dos recursos.  Por exemplo, utilizar uma instância EC2 que esteja de acordo com seu tipo de workload.
+- otimização de custos : ficar de olho nas suas instâncias EC2 para não correr o risco de estar usando uma instância  verticalmente muito grande de forma desnecessária
+- sustentabilidade: minimizar os impactos ambientais da execução de workloads na nuvem.  Redução do consumo de energia e ampliação da eficiência são as principais áreas deste pilar
+
+Questionário
+
+### Benefícios da nuvem AWS
+- Seis principais benefícios da AWS
+  - custo variável, pagar pelo que utilizar
+  - benefício de economia de escala massiva
+  - parar de adivinhar a capacidade
+  - aumente a velociadade e agilidade
+    - criar e excluir recursos rapidamente
+  - parar de gastar dinheiro com execução e manutenção de datacenters
+  - alcance global em minutos
+
+Questionário
+
+### Resumo do módulo 10
+Os seis pilares do AWS Well-Architected Framework:
+- Excelência operacional
+- Segurança
+- Confiabilidade
+- Eficiência de desempenho
+- Otimização de custos
+- Sustentabilidade
+
+Seis vantagens da computação em nuvem:
+- Trocar despesas iniciais por despesas variáveis.
+- Benefícios das grandes economias de escala.
+- Parar de adivinhar capacidade.
+- Aumentar a velocidade e agilidade.
+- Parar de gastar dinheiro com execução e manutenção de data centers.
+- Ter alcance global em minutos.
+
+### Questionário do módulo 10
