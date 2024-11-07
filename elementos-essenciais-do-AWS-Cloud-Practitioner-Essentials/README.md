@@ -581,3 +581,13 @@ Seis vantagens da computação em nuvem:
 - Ter alcance global em minutos.
 
 ### Questionário do módulo 10
+
+## Módulo 11: Noções básicas do AWS Cloud Practitioner
+### Introdução ao módulo 11
+- Determinar recursos para se preparar para o exame AWS Certified Cloud Practitioner.
+- Descrever os benefícios da certificação AWS.
+
+### Detalhes do exame
+
+
+## Avaliação final
