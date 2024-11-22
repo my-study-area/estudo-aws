@@ -591,3 +591,30 @@ Seis vantagens da computação em nuvem:
 
 
 ## Avaliação final
+
+
+# AWS Partner: Credenciamento (Técnico) (Português) | AWS Partner: Accreditation (Technical) (Portuguese)
+https://explore.skillbuilder.aws/learn/course/13246/play/116873/boas-vindas-portugues-welcome-portuguese
+
+
+## AWS Technical Essentials
+https://explore.skillbuilder.aws/learn/course/1851/AWS%2520Technical%2520Essentials
+
+
+### AWS Technical Essentials Part 1
+https://explore.skillbuilder.aws/learn/course/1851/play/135839/aws-technical-essentials-part-1
+
+
+### AWS Technical Essentials Part 2
+https://explore.skillbuilder.aws/learn/course/1851/play/140327/aws-technical-essentials-part-2
+
+
+## Indicações
+- [Introduction to the AWS Cloud Adoption Framework (CAF)](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/189/introduction-to-the-aws-cloud-adoption-framework-caf%20)
+- [AWS Partner: Well-Architected Best Practices (Technical)](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/2426/aws-partner-well-architected-best-practices-technical%20)
+- [TO DO IN FUTURE: AWS Partner: Sales Accreditation (Business)](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/13258/aws-partner-sales-accreditation-business)
+
+Outros:
+- [AWS Cloud Quest: Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11458/aws-cloud-quest-cloud-practitioner?trk=1b409ad1-89ec-4848-b9fb-6065cb3bbc39&sc_channel=el)
+- https://explore.skillbuilder.aws/learn/lp/2033/AWS%2520Partner%2520Certification%2520Readiness%2520-%2520Cloud%2520Practitioner%2520
+- serverless: https://explore.skillbuilder.aws/learn/learning_plan/view/2228/aws-simulearn-serverless-developer
