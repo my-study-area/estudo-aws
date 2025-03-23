@@ -6,6 +6,14 @@ Estudo AWS
 
 ## [NEW] Ultimate AWS Certified Cloud Practitioner CLF-C02
 
+## Pré-requisitos para rewards de prova AWS 100% Free
+Informações: https://www.awseducate.com/student/s/etc-content-details?content-id=a1daq0000000JttAAE
+
+Vídeo com explicação: https://www.youtube.com/watch?v=1gIrErgpD_8
+
+Cursos obrigatórios: 
+- [AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/courses/134/aws-cloud-practitioner-essentials/lessons)
+- [Exam Prep Official Practice Question Set: AWS Certified Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/external/view/elearning/14050/exam-prep-official-question-set-aws-certified-cloud-practitioner-clf-c02-english)
 
 ## Links
 - AWS ECS Fargate: Criando e deployando uma aplicação Node.js:
