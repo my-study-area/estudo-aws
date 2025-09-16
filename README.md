@@ -1,6 +1,12 @@
 # estudo-aws
 Estudo AWS
 
+# Practitioner
+
+Exames práticos:
+- OK - Official Practice Question Set: AWS Certified Cloud Practitioner (CLF-C02 - English)[skillbuilder](https://skillbuilder.aws/learn/E4W52ZKK6P/official-practice-question-set-aws-certified-cloud-practitioner-clfc02--english/RJSZKD3MG3?transcriptid=cce7ebc1-3bfc-5619-bd38-235bff3a0a30&responseid=R_7ruvXDoiHEQ6j9n)
+
+
 ## Sumário
 - [Anotações da playlist AWS ECS Fargate: Criando e deployando uma aplicação Node.js](./playlist-youtube-ecs-fargate-node/)
 
