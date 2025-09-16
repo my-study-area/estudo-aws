@@ -16,6 +16,28 @@ Cursos obrigatórios:
 - [Exam Prep Official Practice Question Set: AWS Certified Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/external/view/elearning/14050/exam-prep-official-question-set-aws-certified-cloud-practitioner-clf-c02-english)
 
 ## Links
+### Associate
+
+**📚 Cursos de AWS**
+- **Udemy – Stephane Mareek**  
+  Curso rápido, para quem já trabalha ou conhece AWS. É conciso.  
+  [Link para o curso Teórico](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)  
+  [Link para o Exame Pático](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/?couponCode=MT250915G3)
+
+- **Udemy – Neal Davis**  
+  Curso mais didático, com mais exemplos, labs e hands-on. Indicado para quem gosta de aprender fazendo.  
+  [Link 1](https://www.udemy.com/course/aws-certified-developer-associate-exam-training/)
+
+- **Adrian Cantrill**  
+  Bom curso, com foco em alternativas.  
+  [Link para o curso](https://learn.cantrill.io/p/aws-certified-developer-associate)
+
+- **ACloudGuru / Pluralsight**  
+  Para ter mais uma opção.  
+  [Link para o curso](https://www.pluralsight.com/individuals/pricing)
+
+
+### Practitioer
 - AWS ECS Fargate: Criando e deployando uma aplicação Node.js:
   - [AWS ECS Fargate: Criando e deployando uma aplicação Node.js](https://www.youtube.com/playlist?list=PLWQmZVQayUUI5RinDqpoIXiRYWy5YZKjs)
   - [Ferramenta CIDR](https://cidr.xyz/)
