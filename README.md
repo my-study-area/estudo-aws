@@ -5,7 +5,7 @@ Estudo AWS
 
 Exames práticos:
 - OK - Official Practice Question Set: AWS Certified Cloud Practitioner (CLF-C02 - English)[skillbuilder](https://skillbuilder.aws/learn/E4W52ZKK6P/official-practice-question-set-aws-certified-cloud-practitioner-clfc02--english/RJSZKD3MG3?transcriptid=cce7ebc1-3bfc-5619-bd38-235bff3a0a30&responseid=R_7ruvXDoiHEQ6j9n)
-
+- Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - English) [skillbuilder](https://skillbuilder.aws/learn/93WN9GJ1PK/exam-prep-plan-overview-aws-certified-cloud-practitioner-clfc02--english/88Y7YE3JPK)
 
 ## Sumário
 - [Anotações da playlist AWS ECS Fargate: Criando e deployando uma aplicação Node.js](./playlist-youtube-ecs-fargate-node/)
@@ -65,3 +65,8 @@ Cursos obrigatórios:
 - [Introduction to Containers](https://explore.skillbuilder.aws/learn/courses/106/introduction-to-containers)
 - [Getting Started with Amazon ECS](https://explore.skillbuilder.aws/learn/courses/13597/getting-started-with-amazon-ecs)
 - [Amazon Elastic Kubernetes Service (EKS) Getting Started ](https://explore.skillbuilder.aws/learn/courses/22416/amazon-elastic-kubernetes-service-eks-getting-started)
+- [AWSTrainingLive - Twitch.tv](https://www.twitch.tv/awstraininglive/videos)
+- [Sobre o agendamento online do exame](https://aws.amazon.com/pt/certification/certification-prep/testing/)
+  - [Durante o teste (dia do teste)](https://aws.amazon.com/pt/certification/policies/during-testing/) > Conferência de fiscalização online > [no site da Pearson VUE](https://www.pearsonvue.com/us/en/aws/onvue.html)
+  - [requisitos, s.o, notebook, headset e etc](https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/tech-specs/online-proctored/onvue-technical-requirements.pdf)
+- [Simulados AWS](https://www.examtopics.com/exams/amazon/)
