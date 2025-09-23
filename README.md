@@ -5,7 +5,8 @@ Estudo AWS
 
 Exames práticos:
 - OK - Official Practice Question Set: AWS Certified Cloud Practitioner (CLF-C02 - English)[skillbuilder](https://skillbuilder.aws/learn/E4W52ZKK6P/official-practice-question-set-aws-certified-cloud-practitioner-clfc02--english/RJSZKD3MG3?transcriptid=cce7ebc1-3bfc-5619-bd38-235bff3a0a30&responseid=R_7ruvXDoiHEQ6j9n)
-- Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - English) [skillbuilder](https://skillbuilder.aws/learn/93WN9GJ1PK/exam-prep-plan-overview-aws-certified-cloud-practitioner-clfc02--english/88Y7YE3JPK)
+- OK - Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - English) [skillbuilder](https://skillbuilder.aws/learn/93WN9GJ1PK/exam-prep-plan-overview-aws-certified-cloud-practitioner-clfc02--english/88Y7YE3JPK)
+- AWS Partner: Accreditation (Technical). [skillbuilder](https://skillbuilder.aws/learn/8DDTPJ2RK5/aws-partner-accreditation-technical/AHX1VJYYVV?parentId=GD647EFDV9)
 
 ## Sumário
 - [Anotações da playlist AWS ECS Fargate: Criando e deployando uma aplicação Node.js](./playlist-youtube-ecs-fargate-node/)
@@ -43,7 +44,7 @@ Cursos obrigatórios:
   [Link para o curso](https://www.pluralsight.com/individuals/pricing)
 
 
-### Practitioer
+### Practitioner
 - AWS ECS Fargate: Criando e deployando uma aplicação Node.js:
   - [AWS ECS Fargate: Criando e deployando uma aplicação Node.js](https://www.youtube.com/playlist?list=PLWQmZVQayUUI5RinDqpoIXiRYWy5YZKjs)
   - [Ferramenta CIDR](https://cidr.xyz/)
@@ -70,3 +71,4 @@ Cursos obrigatórios:
   - [Durante o teste (dia do teste)](https://aws.amazon.com/pt/certification/policies/during-testing/) > Conferência de fiscalização online > [no site da Pearson VUE](https://www.pearsonvue.com/us/en/aws/onvue.html)
   - [requisitos, s.o, notebook, headset e etc](https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/tech-specs/online-proctored/onvue-technical-requirements.pdf)
 - [Simulados AWS](https://www.examtopics.com/exams/amazon/)
+- [Create or access(opens in a new tab) your AWS Certification account to schedule your exam](https://www.aws.training/certification/?ch=tile&tile=getstarted)
