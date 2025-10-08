@@ -8,6 +8,8 @@ Exames práticos:
 - OK - Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - English) [skillbuilder](https://skillbuilder.aws/learn/93WN9GJ1PK/exam-prep-plan-overview-aws-certified-cloud-practitioner-clfc02--english/88Y7YE3JPK)
 - AWS Partner: Accreditation (Technical). [skillbuilder](https://skillbuilder.aws/learn/8DDTPJ2RK5/aws-partner-accreditation-technical/AHX1VJYYVV?parentId=GD647EFDV9)
 
+  - AWS Technical Essentials: https://skillbuilder.aws/learn/K8C2FNZM6X/aws-technical-essentials/N7Q3SXQCDY
+  
 ## Sumário
 - [Anotações da playlist AWS ECS Fargate: Criando e deployando uma aplicação Node.js](./playlist-youtube-ecs-fargate-node/)
 
@@ -70,5 +72,6 @@ Cursos obrigatórios:
 - [Sobre o agendamento online do exame](https://aws.amazon.com/pt/certification/certification-prep/testing/)
   - [Durante o teste (dia do teste)](https://aws.amazon.com/pt/certification/policies/during-testing/) > Conferência de fiscalização online > [no site da Pearson VUE](https://www.pearsonvue.com/us/en/aws/onvue.html)
   - [requisitos, s.o, notebook, headset e etc](https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/tech-specs/online-proctored/onvue-technical-requirements.pdf)
+  - [AWS OnVUE - Portuguese - explicações sobre o dia da prova:](https://www.youtube.com/watch?v=fmnUvcpQxBw)
 - [Simulados AWS](https://www.examtopics.com/exams/amazon/)
 - [Create or access(opens in a new tab) your AWS Certification account to schedule your exam](https://www.aws.training/certification/?ch=tile&tile=getstarted)
