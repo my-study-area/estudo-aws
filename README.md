@@ -75,3 +75,4 @@ Cursos obrigatórios:
   - [AWS OnVUE - Portuguese - explicações sobre o dia da prova:](https://www.youtube.com/watch?v=fmnUvcpQxBw)
 - [Simulados AWS](https://www.examtopics.com/exams/amazon/)
 - [Create or access(opens in a new tab) your AWS Certification account to schedule your exam](https://www.aws.training/certification/?ch=tile&tile=getstarted)
+- [AWS SimuLearn: Cloud Practitioner](https://skillbuilder.aws/learning-plan/EKHCUEWUUC/aws-simulearn-cloud-practitioner/1UQVR262ZB)
