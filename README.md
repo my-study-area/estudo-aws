@@ -46,6 +46,10 @@ Cursos obrigatórios:
   [Link para o curso](https://www.pluralsight.com/individuals/pricing)
 
 
+  #### Cursos
+  - [[2025] Ace your AWS Certified Developer Exam with this AWS](./2025-ace-your-aws-certified-developer-exam-with-this-aws.md)
+
+
 ### Practitioner
 - AWS ECS Fargate: Criando e deployando uma aplicação Node.js:
   - [AWS ECS Fargate: Criando e deployando uma aplicação Node.js](https://www.youtube.com/playlist?list=PLWQmZVQayUUI5RinDqpoIXiRYWy5YZKjs)
