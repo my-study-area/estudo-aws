@@ -43,31 +43,75 @@ A comparation between them
 
 
 ### 6. AWS Account Overview
+- account root user
+- AWS IAM (user, group, role, policy)
 
 
 ### 7. [HOL] Create your AWS Account
+- free plan (11 months)
+  - select aws service and features
+  - acoocunt expires after 6 months
+- paid plan
 
 
 ### 8. [HOL] Configure Account and Create a Budget
+- configure account alias (email+account1@email.com)
+- go to iam service
+- create an alias for the account
+- in left > Billing preferences
+- go to budgets service. Create a budget using a template. Put the emails recupients
+- user has no permission by default
 
 
 ### 9. AWS Identity and Access Management (IAM)
+- console, CLI and API (SDK) are used by principal.
+- Principal is a person or applicattion that can make a requwst for na action or operation on an aws resource.
+- user group have user, user groups, role and policy
 
 
 ### 10. [HOL] Creating IAM Users and Groups
+- step by step to create a user group and user
+- creates a admin user group with full access: AsministratorAccess policy
+- create a user to use aws cconsole and adds the admin user group created before
 
 
 ### 11. IAM Authentication and MFA
+Step by step to create a user and add to a group.
 
 
 ### 12. [HOL] Setup Multi-Factor Authentication (MFA)
+- aws console: username and password
+- cli or api: access key id and secret access key
+- phisical or virtual MFA
 
 
 ### 13. AWS Security Token Service (STS)
+- sts: temporary credential
+
+The source explains the function and operational mechanics of the AWS Security Token Service (STS), which is responsible for issuing short-lived or temporary security credentials across the platform. It outlines a common use case where an EC2 instance requiring access to an S3 bucket must first assume an IAM role via the STS Assume Role API call. This assumption process is managed by two policy types: a permissions policy, which defines allowed actions, and a crucial trust policy, which strictly controls who is authorized to assume the role. Upon successful assumption, STS issues the required temporary security credentials—including an access key, secret key, and session token—to enable the authorized access. These credentials are designed to expire quickly but are renewed automatically by STS, making the service essential for scenarios such as cross-account access and Identity Federation.
 
 
 ### 14. Access Control Methods - RBAC & ABAC
-
+- RBAC: role-based access control
+  - policies are attached to groups
+- ABAC: attribute-based access control
+  - use attribute like tags to apply polices
 
 ### 15. [HOL] Switching IAM Roles
+- go to ima service > user > group 
+- create a default user, without groups (don't define password in the next login)
+- go to ec2 and can't view elastic ips and load balancers
+- create a new roles (amazonEC2FullAccess policy). Name the role with ec2-role
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Action": "sts:AssumeRole",
+    "Resource": "arn:aws:iam::975050181034:role/ec2-role"
+  }
+}
+```
+fonte: https://github.com/forks-projects/aws-dva-code/blob/main/aws-iam/sts-assume-role.json
 
