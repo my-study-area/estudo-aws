@@ -115,3 +115,68 @@ The source explains the function and operational mechanics of the AWS Security T
 ```
 fonte: https://github.com/forks-projects/aws-dva-code/blob/main/aws-iam/sts-assume-role.json
 
+
+
+## Section 3: AWS Command Line Interface (CLI)
+### 16. Introduction
+CLI: Command line interface
+
+
+### 17. [HOL] Install the AWS Command Line Interface (CLI)
+Step by step to install aws cli.
+
+
+### 18. [HOL] Configure Credentials for the AWS CLI
+```bash
+aws configure
+cat .aws/config
+cat .aws/credentials
+```
+
+### 19. [HOL] Overview of Using the AWS CLI
+```bash
+aws help
+
+aws ec2 help
+
+aws ec2 describe-instances
+
+aws s3 help
+
+aws s3 mb s3://mytestbucket1234qwer
+
+aws s3 ls
+
+touch testfile.txt
+
+aws s3 cp testfile.txt s3:/mytestbucket1234qwer
+
+aws s3 ls
+
+aws s3 rb s3://mytestbucket1234qwer
+
+aws s3 ls
+```
+
+
+### 20. [HOL] Assuming IAM Roles (CLI)
+- go to paul user in IAM and remove the polices
+- go to ec2-full-access role. Copy the arn and past in the code bellow:
+
+
+```
+# ~/.aws/config
+[profile ec2-full-access]
+    role_arn = arn:aws:iam::821711655051:role/EC2-Full-Access
+    source_profile = default
+```
+
+```bash
+aws ec2 describe-instances
+
+aws ec2 describe-instances --profile ec2-full-access
+
+aws configure --profile Neal
+
+aws s3 ls --profile Neal
+```
