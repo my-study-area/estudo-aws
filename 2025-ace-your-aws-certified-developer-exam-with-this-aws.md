@@ -180,3 +180,140 @@ aws configure --profile Neal
 
 aws s3 ls --profile Neal
 ```
+
+## Section 4: Amazon VPC, EC2, and ELB
+### 21. Introduction
+- VPC
+- load balancer
+- EC2
+- auto scaling
+- ELB
+
+
+### 22. Amazon VPC, Security Groups, and NACLs
+- VPC: logic isolate
+  - public and private subnets
+  - router
+  - internet gateway
+  - nat instance (managed by you)
+  - nat gateway (managed by aws)
+  - ACLs
+
+
+### 23. Amazon EC2 Overview
+- ENI (elastic network interface): to connect the ec2 instances
+- ecs instances families & types: general purpose, compute optimized, memory optimized e etc
+- EBS
+
+
+
+### 24. [HOL] Create a Custom VPC
+- vpc: 10.0.0.0/16
+  - public: us-east-1a/ 10.0.1.0/24
+  - public: us-east-1b/ 10.0.2.0/24
+  - private a: 10.0.3.0/24
+  - private b: 10.0.4.0/24
+- route table
+  - 10.0.0.0/16 local
+  - 0.0.0.0/0 igw-id
+- private route-RT
+  - 10.0.0.0/16 local
+- internet gateway: 
+  - vpc: myvpc
+  - public route
+    - 0.0.0.0/0 -> IG
+- public subnet A and B: Enable auto-assign public IPv4 address
+- EC2
+  - vpc: MyVPV
+  - public subnet 
+  - AZ: us-east-1b/a
+
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-vpc/custom-vpc.md
+
+
+### 25. Amazon EBS and Instance Stores
+- EBS volumes: persistent storage
+- instance store (phisically attached): ephemeral
+
+
+### 26. [HOL] Create and Attach an EBS Volume
+- https://github.com/forks-projects/aws-dva-code/blob/main/amazon-ebs/amazon-ebs-volumes.md
+
+
+### 27. Amazon Elastic File System (EFS)
+- regional file system
+- EFS support linux only
+
+
+### 28. [HOL] Create an Amazon EFS Filesystem
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-efs/working-with-efs.md
+
+
+
+### 29. Amazon EC2 User Data and Metadata
+- data about your instance
+- IMDS: instance metadata service
+  - IMDSv1
+  - IMDSv2
+- amazon ec2 user data: batch and powershell script that run on start
+  - user data only runs the first time you launch your instance
+
+### 30. [HOL] Using User Data and Metadata
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-ec2/user-data-metadata.md
+
+
+### 31. Access Keys and IAM Roles with EC2
+Access Keys and IAM Roles are two distinct methods for supplying permissions to Amazon EC2 instances, such as granting access to an S3 bucket. Access Keys are long-term credentials associated with an IAM user account and configured on the instance, but they are stored in plain text, presenting a significant security risk if they are compromised. To avoid this security exposure, IAM Roles can be utilized; they have policies assigned to them and allow the instance to gain the required permissions without storing any credentials locally. The instance assumes the role and leverages the AWS Security Token Service (STS) to obtain credentials that are short-term and have a much shorter expiration period. Since the instance automatically renegotiates for new credentials before the old ones expire, utilizing IAM Roles is the preferred and more secure option compared to storing long-term access keys
+
+
+
+### 32. [HOL] Practice with Access Keys and IAM Roles
+- shows how the advantages of using access key instead IAM roles
+- always use IAM roles
+
+
+### 33. Amazon EC2 Auto Scaling
+- automatically launche abd terminates instances
+- maintain availability and scale capacity
+- working with ec2, ecs and eks
+- integrated with many services like coloudwatch for monitoring and elastic load balance for distributing connections
+
+
+### 34. [HOL] Create an Auto Scaling Group
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-ec2/user-data-web-server.sh
+
+- create an ec2 launch template
+- crate an auto scaling group and use the template created bafore
+
+
+### 35. Amazon Elastic Load Balancing
+- provide high availability and fault tolerance
+- application load balancer: layer 7 (HTTP/HTTPS)
+- network load balancer: layer 4 TCP and UDP
+- gateway load balancer: deploy, scale and manage 3rd party virtual netowork appliances
+
+
+
+### 36. [HOL] Create an Application Load Balancer
+
+
+
+### 37. [HOL] Create a Scaling Policy
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-ec2/generate-load-on-alb.md
+```bash
+for i in {1..200}; do curl http://your-alb-address.com & done; wait
+```
+
+
+### 38. [HOL] Create ASG and ALB using the AWS CLI
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-ec2/create-asg-alb-cli.md
+
+
+
+### 39. Exam Cram - VPC - EC2 - ELB
+
+
+
+### Quiz 1: Amazon VPC, EC2, and ELB
+
+
