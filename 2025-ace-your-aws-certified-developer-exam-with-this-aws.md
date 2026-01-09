@@ -541,3 +541,65 @@ Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-cloudfront
 
 
 
+## Section 6: Infrastructure as Code and PaaS
+
+### 61. Introduction
+- cloudformation
+- elastic Beanstalk
+
+
+### 62. Infrastructure as Code with AWS CloudFormation
+- template file using code (yml or json  file)
+- template
+- stacks
+- stacksets
+- change sets
+
+
+### 63. [HOL] Creating and Updating Stacks
+- https://github.com/forks-projects/aws-dva-code/blob/main/aws-cloudformation/1-ec2-template.yml
+- https://github.com/forks-projects/aws-dva-code/blob/main/aws-cloudformation/2-ec2-template.yml
+- https://github.com/forks-projects/aws-dva-code/blob/main/aws-cloudformation/3-ec2-template.yml
+
+
+### 64. [HOL] Create Nested Stack using the AWS CLI
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-cloudformation/Create%20Nested%20Stack%20using%20the%20AWS%20CLI.md
+
+
+
+### 65. CloudFormation Template Deep Dive
+
+
+
+### 66. [HOL] Complex VPC Stack
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-cloudformation/create-vpc-with-cloudformation.yaml
+
+
+
+### 66. Platform as a Service with AWS Elastic Beanstalk
+- IAAS
+- PAAS (Elastic Beanstalk)
+
+
+
+### 68. [HOL] Create an Elastic Beanstalk Application
+
+
+
+### 69. Advanced Configuration and SSL/TLS
+- configuration files for Aws Elastic Beanstalk is .ebextensions
+- connections between clients and load balancer are secured
+- backend connections between the load balancer and ec2 are not secured
+- you can configure the certificate throutgh the console or throught .ebextensions
+
+
+### 70. Exam Cram - Infrastructure as Code and PaaS
+
+
+
+### Quiz 3: Infrastructure as Code and PaaS
+
+
+
+
+
