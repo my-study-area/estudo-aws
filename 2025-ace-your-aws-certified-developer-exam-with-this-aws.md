@@ -600,6 +600,123 @@ Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-cloudformatio
 ### Quiz 3: Infrastructure as Code and PaaS
 
 
+## Section 7: AWS Lambda and AWS SAM
+### 71. Introduction
+
+
+### 72. Serverless Services and Event-Driven Architecture
+- serverless services there are no instances to manage
+- you don't need to provision hardware
+- there is no management of operating systems or software
+- provides automatic scaling and high availability
+
+
+### 73. AWS Lambda
+- milisecond billing
+- synchronous and assychronous
+
+
+### 74. Invoking Lambda Functions
+- Lambda functions can be invoked directly through:
+  - The Lambda console
+  - A function URL HTTP(S) endpoint
+  - The Lambda API
+  - An AWS SDK
+  - The AWS CLI
+  - AWS Toolkits
+
+
+### 75. [HOL] Invoking Functions
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/invoking-functions.md
+
+
+
+
+### 76. [HOL] Create Event Source Mapping
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/event-source-mapping.md
+
+
+
+### 77. Lambda Versions and Aliases
+- versioning means you have multiple version of your function
+- MyFunction:$LATEST: alway run the latest version
+- MyFunction:$1: alway run the first version
+- each version has its own ARN
+
+
+### 78. [HOL] Using Versions and Aliases
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/invoke-lambda-versions-aliases.md
+
+
+
+### 79. Deployment Packages and Environment Variables
+- deploy packages - zip archives
+- deploy throught cloudformation
+- lambda layer: additional code
+- lambda environment
+
+
+### 80. [HOL] Using Environment Variables
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/lambda-environ-test.md
+- example using environment with and without KMS encription
+
+
+### 81. Destinations and Dead-Letter Queues
+
+
+
+### 82. [HOL] Destinations and DLQ
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/destinations-and-dlq.md
+- the first example uses a destination and the second uses a DLQ
+
+
+
+### 83. Reserved and Provisioned Concurrency
+
+
+
+### 84. Monitoring, Logging, and Tracing
+
+
+
+### 85. Lambda in a VPC and ALB Targets
+
+
+
+### 86. Security for Lambda Functions
+
+
+
+### 87. Best Practices for Developing with Lambda Functions
+- Separate the Lambda handler from your core logic
+- Take advantage of execution environment reuse to improve 
+the performance of your function
+- Use a keep-alive directive to maintain persistent connections
+- Control the dependencies in your function's deployment package
+- Minimize your deployment package size to its runtime necessitie
+- Avoid using recursive code in your function
+
+
+### 88. AWS Serverless Application Model (SAM)
+- SAM (AWS Serverless Application Model)
+- AWS SAM templates are an extension of AWS CloudFormation templates
+- The “Transform” header indicates it’s a SAM template: `Transform: 'AWS::Serverless-2016-10-31'`
+
+
+### 89. [HOL] Run SAM App Using CloudShell
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/sam-cli-commands.md
+
+
+
+### 90. [HOL] The Serverless Application Repository
+- SAR
+
+
+### 91. Exam Cram - AWS Lambda and AWS SAM.mp4
+
+
+
+### Quiz 4: AWS Lambda and AWS SAM
 
 
 
