@@ -719,4 +719,131 @@ Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-lambda/sam-cl
 ### Quiz 4: AWS Lambda and AWS SAM
 
 
+## Section 8: Amazon DynamoDB
+### 92. Introduction
+
+
+
+### 93. Amazon DynamoDB
+- it is non-relational database
+- can store key/value and document data types
+- dynamoDB Acceleratior (DAX)
+- basic components are:
+  - Tables
+  - Items
+  - attributes
+
+
+### 94. DynamoDB Partitions and Primary Keys
+- there are two types od primary key: partition key and composite keys
+- partition key: unique id for each item. partition key
+- composite key:partition key + sort key comabination. Many itens with the same partition key
+- cache: use DAX (DynamoDB Accelerator)
+
+
+### 95. [HOL] Practice Creating DynamoDB Tables
+
+
+### 96. DynamoDB Consistency Models and Transactions
+- DynamoDB supports eventually consistent and strongly consistent reads
+- Eventually consistent reads:
+  - When you read data from a DynamoDB table, the response might not reflect the results of a recently completed write operation 
+  - The response might include some stale data
+  - If you repeat your read request after a short time, the response should return the latest data
+- Strongly consistent read:
+  - DynamoDB returns a response with the most up-to-date data, reflecting the updates from all prior write operations that were successful
+- A strongly consistent read might not be available if there is a network delay or outage. In this case, DynamoDB may return a server error (HTTP 500)
+- Strongly consistent reads may have higher latency than eventually consistent reads
+- Strongly consistent reads are not supported on global secondary indexes
+- Strongly consistent reads use more throughput capacity than eventually consistent reads
+
+
+
+### 97. DynamoDB Capacity Units (RCU/WCU)
+- RCUs (Ready capacity units)
+- WCUs (Write capacity units)
+
+
+### 98. DynamoDB Performance and Throttling
+- Throttling occurs when the configured RCus or WCU are exceeded
+- you may receive the folowing erro: ProvisionedThroughputExceededException
+
+
+### 99. DynamoDB Scan and Query API
+- scan and query API
+- Scan: one by one, each item. Use `FilterExpression` to return fewe items. Projection Expression will return all post in such conditions
+- Query: query operation finds items in you table based on the primary key attribute and a distinct value to search for. You can also use the ProjectionExpression parameter if you want 
+the query to only return the attributes you want to see
+
+
+
+### 100. [HOL] Searching DynamoDB - Scan API
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-dynamodb/DynamoDB%20CLI%20Commands.sh
+
+
+### 101. [HOL] Searching DynamoDB - Query API
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-dynamodb/DynamoDB%20CLI%20Commands.sh
+
+
+### 102. DynamoDB LSI and GSI
+- LSI (Local secondary Indexes)
+Provides an alternative sort key to use for scans 
+and queries
+  - Can create up to 5 LSIs per table
+  - Must be created at table creation time
+  - You cannot add, remove, or modify it later
+  - It has the same partition key as your original table (different sort key)
+  - Gives you a different view of your data, organized by alternative sort key
+  - Any queries based on this sort key are much faster using the index than the main table
+
+- GSI (Global Secondary Indexes)
+  - Used to speed up queries on non-key attributes
+  - You can create when you create your table or at any time
+  - Can specify a different partition key as well as a different sort key
+  - Gives a completely different view of the data
+  - Speeds up any queries relating to this alternative partition and sort ke
+
+### 103. [HOL] Create LSI and GSI
+
+
+
+### 104. DynamoDB Optimistic Locking and Conditional Updates
+- protect the consistency
+- Optimistic locking is a strategy to ensure that the client-side item that you are updating (or deleting) is the same as the item in Amazon DynamoDB
+- Protects database writes from being overwritten by the writes of others, and vice vers
+
+
+- To manipulate data in an Amazon DynamoDB table, you use the PutItem, UpdateItem, and DeleteItem operations
+- You can optionally specify a condition expression to determine which items should be modified
+- If the condition expression evaluates to true, the operation succeeds; otherwise, the operation fail
+
+
+### 105. [HOL] Adding a Time to Live (TTL) to Items
+- https://www.epochconverter.com/ to converter in milisecond in a TTL
+- enable TTL and add the name of the column
+
+
+### 106. Amazon DynamoDB Streams
+
+
+### 107. Amazon DynamoDB Accelerator (DAX)
+- DAX (DynamoDB Accelerator)
+- cache
+- only read
+
+
+### 108. Amazon DynamoDB Global Tables
+ - DynamoDB global tables is a fully managed solution for deploying a multi-region, multi-master database
+- When you create a global table, you specify the AWS Regions where you want the table to be available
+- DynamoDB performs all the necessary tasks to create identical tables in these regions, and propagate ongoing data changes to all of them
+
+
+
+### 109. [HOL] Enable Global Table
+
+
+### 110. Exam Cram - Amazon DynamoDB
+
+
+### Quiz 5: Amazon DynamoDB
 
