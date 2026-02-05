@@ -847,3 +847,136 @@ and queries
 
 ### Quiz 5: Amazon DynamoDB
 
+
+## Section 9: Application Integration and APIs
+### 111. Introduction
+- API
+- SQS
+- SNS
+- Amazon EventBridge
+- Step Functions
+- Amazon API Gateway (HTTP / REST)
+
+
+### 112. Amazon Simple Queue Service (SQS)
+- SQS is pull-based, not pushed-bses (like SNS)
+- Default retentio is 4 days
+- guarantees that your messages will be processed at least once
+- standart queue does not guarantees the order of the messages
+- fifo queues required message group id and message deduplication
+- delay queue: delay the message for some seconds before to be ready for reading
+- long polling vs short polling: SQS Long polling is a way to retrieve messages from SQS queues – waits for messages to arrive. SQS Short polling returns immediately (even if the message queue is empty)
+
+
+
+### 113. [HOL] Working with SQS Queues
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-sqs/aws-sqs-cli-commands.md
+
+
+### 114. Amazon SQS API and Client Library
+ReceiveMessage
+- Retrieves one or more messages (up to 10), from the specified queue
+- Using the WaitTimeSeconds parameter enables long-poll support 
+
+SendMessage
+- DelaySeconds parameter delays a message
+- MessageDeduplicationId parameter adds a deduplication ID (FIFO only)
+- MessageGroupId parameter adds a tag for a message group (FIFO only)
+
+
+### 115. Amazon Simple Notification Service (SNS)
+- pub/sub messaging service
+
+
+
+### 116. [HOL] Simple Serverless Application
+- sns and sqs
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-sqs/lambda-code-sns-sqs.py
+
+
+
+### 117. AWS Step Functions
+- is used to build distributed applications as a series of steps in a visual workflow
+
+
+### 118. [HOL] Create State Machine
+- 
+
+
+### 119. Amazon EventBridge
+
+
+
+### 120. [HOL] Create Event Bus and Rule
+
+
+
+### 121. Amazon API Gateway
+- create and publish apis 
+  - REST APIs
+  - HTTP APIs: aws services, like aws lambda and HHTP endpoints
+  - websocket APIs: such as lambda or dynamoDB
+
+
+
+### 122. Methods, Integrations, and Mapping Templates
+- a resource is a path in you api. Ex: "/" or "/pets" or "/pets/{petId}"
+- method request: get, post, delete
+- integration request: HTTP, HTTP_PROXY, LAMBDA_PROXY or MOCK
+- endpoint (Lambda Function, HTTP endpoint, EC2 instance, AWS service)
+- integration response: CONVERT PASSTHROUGH
+- method response: HTTP_STATUS, CODES, RESPONSE, BODIES
+
+
+### 123. API Gateway Stages and Deployments
+- deployment
+- stage
+- stage variable
+
+
+
+### 124. [HOL] Build an API with Lambda Proxy Integration
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-api-gateway/rest-api-lambda-proxy.py
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-api-gateway/url-commands-to-run.md
+
+
+### 125. API Gateway Caching and Throttling
+- caching endpoint's response
+- clients canc invalidadte the cache with the header: `Cache-Control: max-age=0`
+
+
+### 126. [HOL] Configure Caching and Throttling
+
+
+### 127. API Gateway Usage Plans and API Keys
+- users connect to specific public endpoint with API key that is configured in a usage plan
+- A usage plan specifies who can access one or more deployed API stages and methods — and how much and how fast they can access them 
+- You can use a usage plan to configure throttling and quota limits, which are enforced on individual client API keys 
+- The plan uses API keys to identify API clients and meters access to the associated API stages for each key 
+- It also lets you configure throttling limits and quota limits that are enforced on individual client API keys 
+- You can use API keys together with usage plans or Lambda authorizers to control access to your API
+
+
+### 128. [HOL] Usage Plans and API Keys
+
+
+
+### 129. [HOL] Microservice with API, Lambda, and DynamoDB
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-api-gateway/api-lambda-dynamodb-hol.md
+
+
+
+### 130. API Gateway Access Control
+- resource-bsed policies
+- identiy-based policies
+- IAM tags
+- Endpoint pokicies for interface VPC endpoints
+- Lambda authorizers
+- Amazon Cognito user pools
+
+
+### 131. Exam Cram - Application Integration and APIs
+
+
+
+### Quiz 6: Application Integration and APIs
