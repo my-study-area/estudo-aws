@@ -980,3 +980,96 @@ Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-api-gatewa
 
 
 ### Quiz 6: Application Integration and APIs
+
+
+
+## Section 10: Containers on Amazon ECS/EKS
+### 132. Introduction
+- ECS
+- EKS
+- ECR
+
+
+
+### 133. Amazon Elastic Container Service (ECS)
+- ECS Cluster: logical grouping
+- task: is a running Docker container
+- task definition: a task is created from a task definition
+- image: Docker image can be stored in ECR
+- service: are used to maintain a desired couint of tasks
+
+
+
+### 134. Amazon ECS Launch Types
+- EC2 launch type
+- fargate launch type
+
+
+### 135. Amazon ECS and IAM Roles
+- EC2
+  - the container instance IAM role provides permissions to the host
+  - the ECS task IAM role provides permisssions to the container
+- Fargate
+  - with the fargate launch type only IAM task roles can be applied
+
+
+### 136. ECS Task Placement Strategies
+- ECS task Placement Strategies
+- cluster query language
+
+
+### 137. Scaling Amazon ECS
+- service autoscaling
+  - automatically adjusts the desired task count up or down using the application auto scaling service
+  - supports targets trancking, step, and scheduled scaling policies
+- cluster autoscale
+  - uses a capacity povider to scale the number of EC2 cluster instances using EC2 auto scaling 
+
+
+### 138. Amazon ECS with ALB
+
+
+
+### 139. [HOL] Create an ECS Cluster with EC2 Launch Type
+
+
+
+### 140. [HOL] Launch Task and Service with ALB
+
+
+
+### 141. Amazon Elastic Container Registry (ECR)
+- container images and artifacts are stored in S3
+
+
+### 142. [HOL] AWS Fargate Blue-Green CI/CD Pipeline – Part 1
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/fargate-blue-green-ci-cd/fargate-ci-cd-instructions.md
+
+
+### 143. [HOL] AWS Fargate Blue-Green CI/CD Pipeline – Part 2
+ - Link: https://github.com/forks-projects/aws-dva-code/blob/main/fargate-blue-green-ci-cd/taskdef.json
+- 
+
+### 144. [HOL] AWS Fargate Blue-Green CI/CD Pipeline – Part 3
+- https://github.com/forks-projects/aws-dva-code/blob/main/fargate-blue-green-ci-cd/create-service.json
+
+
+
+### 145. Amazon Elastic Kubernetes Service (EKS)
+- amazon EKS auto scaling
+- Amazon EKS and Elastic Load Balancing
+- Amazon EKS Distro
+- Amazon ECS and EKS Anywhere
+
+
+### 146. AWS Copilot
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-copilot/copilot-commands.md
+
+
+
+### 147. Exam Cram - Containers on Amazon ECS - EKS
+
+
+
+### Quiz 7: Containers on Amazon ECS/EKS
+
