@@ -1073,3 +1073,68 @@ Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-copilot/copil
 
 ### Quiz 7: Containers on Amazon ECS/EKS
 
+
+
+## Section 11: AWS Developer Tools (CI/CD)
+### 148. Introduction
+- CI (continuous integration)
+- CD (continuous deployment)
+
+
+### 149. CI/CD Overview
+
+
+
+### 150. [HOL] Git and GitHub
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-developer-tools/basic-git-commands.md
+
+
+
+### 151. AWS CodePipeline
+Fully managed continuous delivery service you can use to module, visualize and automate the steps required to release software in CI/CD.
+
+In pipeline we have:
+- source code stage
+- build stage
+- deploy stage
+
+
+### 152. [HOL] Create Pipeline and Application
+
+
+
+### 153. AWS CodeBuild
+- is fully managed continuous integration (CI) service
+- build instructions can be defined in the code (buildspec.yml)
+
+
+
+### 154. [HOL] Add Build Stage to Pipeline
+
+
+
+### 155. AWS CodeDeploy
+- Codeploy is a deployment service that automates application deployments
+
+
+
+### 156. [HOL] AWS Fargate Blue-Green CI/CD Pipeline – Part 4
+- Link: https://github.com/forks-projects/aws-dva-code/blob/main/fargate-blue-green-ci-cd/fargate-ci-cd-instructions.md
+
+
+
+### 157. [HOL] AWS Fargate Blue-Green CI/CD Pipeline – Part 5
+- 
+
+
+### 158. AWS Amplify and AppSync
+
+
+
+### 159. Exam Cram - AWS Developer Tools CI-CD
+
+
+
+### Quiz 8: AWS Developer Tools (CI/CD)
+
+
