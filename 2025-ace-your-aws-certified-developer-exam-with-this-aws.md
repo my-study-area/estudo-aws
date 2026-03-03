@@ -1138,3 +1138,110 @@ In pipeline we have:
 ### Quiz 8: AWS Developer Tools (CI/CD)
 
 
+## Section 12: Databases and Analytics
+### 160. Introduction
+- RDS
+- Mysql, POstgres ans SQL Server
+- Amazon Kinesis
+
+
+
+### 161. Amazon Relational Database Service (RDS)
+- relational database
+- OLTP (online transaction processing)
+- Amazon Aurora (Mysql and PostgreSQL)
+- RDS Multi AZ
+
+
+
+### 162. Amazon RDS Backup and Recovery
+
+
+
+### 163. [HOL] Create Amazon RDS Database
+
+
+
+### 164. [HOL] Create a Read Replica
+
+
+
+### 165. Amazon Aurora
+- Amazon Aurora is an AWS database offering in the RDS family
+- Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud
+- Amazon Aurora is up to five times faster than standard MySQL databases and three times faster than standard PostgreSQL databases
+- Amazon Aurora features a distributed, fault-tolerant, self-healing storage system that auto-scales up to 128TB per database instance
+
+
+
+### 166. Amazon RDS Security
+- encription in transit
+- encription at rest (AES 256)
+- AWS KMS is used for managing encryption keys
+- You can't restore an unencrypted backup or snapshot to an encrypted DB instance
+
+
+### 167. [HOL] Create Encrypted Copy of RDS Database
+* **Encryption Limitation:** You cannot change the encryption status of an existing AWS RDS database instance once it is created.
+* **Initial Snapshot:** Create a snapshot of the unencrypted database; this snapshot will also be unencrypted.
+* **Encrypted Copy:** Use the "Copy Snapshot" action, which provides the option to enable encryption using a KMS key.
+* **Restoration:** Restore the new, encrypted snapshot to create a completely new database instance.
+* **Endpoint Change:** The restored database will have a different endpoint, requiring an update to your application's connection string.
+* **One-way Process:** While you can enable encryption by copying a snapshot, you cannot disable encryption on an already encrypted snapshot.
+
+
+### 168. Amazon ElastiCache
+- Fully managed implementations Redis and Memcached
+- ElastiCache is a key/value store
+- In-memory database offering high performance and low latency
+- Can be put in front of databases such as RDS and DynamoDB
+
+
+### 169. Scaling ElastiCache
+Memcached
+- Add nodes to a cluster
+- Scale vertically (node type) – must create a new cluster manually
+
+Redis
+- Cluster mode disabled: 
+  - Add replica or change node type – creates a new cluster and migrates data
+- Cluster mode enabled: 
+  - Online resharding to add or remove shards; vertical scaling to change node type
+  - Offline resharding to add or remove shards change node type or upgrade engine (more flexible than online)
+
+
+
+### 170. [HOL] Create ElastiCache Cluster
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/amazon-elasticache/add-retrieve-value.md
+
+
+
+### 171. Amazon MemoryDB for Redis
+- Redis-compatible, durable, in-memory database service that delivers ultra-fast performance
+- Entire dataset is stored in memory – entire DB solution
+- Purpose-built for modern applications with microservices architectures
+- Build applications using the same flexible and friendly Redis data structures, APIs, and commands - Microsecond read and single-digit millisecond write latency and high throughput 
+- Data stored durably across multiple AZs using a distributed transactional log
+- Supports write scaling with sharding and read scaling by adding replicas
+
+
+
+### 172. Amazon Kinesis Core Knowledge
+
+
+
+### 173. Amazon Kinesis Client Library (KCL)
+
+
+
+### 174. Amazon OpenSearch Service
+
+
+
+### 175. Amazon Athena and AWS Glue
+Link: https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/
+
+
+
+### Quiz 9: Databases and Analytics
+
