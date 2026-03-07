@@ -1245,3 +1245,113 @@ Link: https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-a
 
 ### Quiz 9: Databases and Analytics
 
+
+## Section 13: Management and Security
+### 176. Introduction
+- Cloud Watch
+- Cloud Trail
+- KMS
+- AWS Certificate Manager
+- AWS Secret Manager
+- Amazon Cognito
+
+
+### 177. AWS AppConfig
+- Create, manage, and deploy application configurations
+
+
+
+### 178. Amazon CloudWatch Overview
+- is used for performance monitoring, alarms, logs collection and automated actions
+
+
+### 179. Amazon CloudWatch Logs
+
+
+
+### 180. [HOL] Review CloudWatch Logs
+
+
+
+### 181. The Unified CloudWatch Agent
+The unified CloudWatch agent enables you to do the following:
+  - Collect internal system-level metrics from Amazon EC2 instances across operating systems
+  - Collect system-level metrics from on-premises servers
+  - Retrieve custom metrics from your applications or services using the StatsD and collectd protocols
+  - Collect logs from Amazon EC2 instances and on-premises servers (Windows / Linux
+
+
+
+### 182. AWS CloudTrail
+- CloudTrail logs API activity for auditing
+
+CloudTrail – Types of Events
+- Management events provide information about management operations that are performed on resources in your AWS account
+- Data events provide information about the resource operations performed on or in a resource
+- Insights events identify and respond to unusual activity associated with write API calls by continuously analyzing CloudTrail management events
+
+
+### 183. [HOL] Create a Trail in AWS CloudTrail
+- create and managed symmetric and asymmetric encryption key
+- Customer Managed KMS Key
+- AWS Managed KMS Key
+- AWS Owned Key
+- DAta encryption KEY
+- KMS Key and automatic Rotation
+
+
+### 184. AWS Key Management Service (KMS)
+
+
+### 185. [HOL] Create Custom KMS Keys
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-kms/kms-key-ebs-rds.json
+
+
+
+### 186. AWS KMS API and CLI
+
+
+
+### 187. AWS Certificate Manager
+- create, store and renew ssl/tls x.509 certificates
+
+
+
+### 188. AWS Systems Manager
+- manages many AWS resources including ec2, s3 and rds
+- system manager components:
+  - automation
+  - run commands
+  - inventory
+  - patch manager
+  - session manager
+  - parameter store
+
+
+### 189. AWS Systems Manager Parameter Store
+
+
+
+### 190. AWS Secrets Manager
+- store and rotate secrets safely without the need for code deployments
+
+
+
+### 191. [HOL] Working with Secrets
+Link: https://github.com/forks-projects/aws-dva-code/blob/main/aws-secrets-manager/secrets-manager-cli-commands.md
+
+
+
+### 192. Amazon Cognito
+- a user pool is a directory for managing sign-in and sign-up for mobile applications
+- identity pools are used to obtain temporary, limited-privilege credentials for AWS services
+
+
+
+### 193. Exam Cram - Management and Security
+
+
+
+### Quiz 10: Management and Security
+
+
