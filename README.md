@@ -47,7 +47,7 @@ Cursos obrigatórios:
 
 
   #### Cursos
-  - [[2025] Ace your AWS Certified Developer Exam with this AWS](./2025-ace-your-aws-certified-developer-exam-with-this-aws.md)
+  - [[2025] Ace your AWS Certified Developer Exam with this AWS - developer associate [DVA-C02]](./2025-ace-your-aws-certified-developer-exam-with-this-aws.md): [certificado](https://www.udemy.com/certificate/UC-0d7eea6d-56e6-45f5-8c43-e8a39246601d/)
 
 
 ### Practitioner
